@@ -1,7 +1,19 @@
 import React from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Upload from "./pages/upload";
+import Navbar from "./components/Navbar";
+
 
 const App = () => {
-  return <div></div>;
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/upload" element={<Upload />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </>
+  );
 };
 
 export default App;

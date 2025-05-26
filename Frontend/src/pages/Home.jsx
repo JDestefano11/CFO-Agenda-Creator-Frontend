@@ -16,14 +16,14 @@ const Home = () => {
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16">
             <Link
-              to="/auth?mode=signup"
+              to="/signup"
               className="px-8 py-3 bg-gradient-to-r from-indigo-600 to-indigo-700 text-white font-medium rounded-lg shadow-lg relative overflow-hidden group"
             >
               <span className="absolute inset-0 w-0 bg-gradient-to-r from-indigo-700 to-purple-700 transition-all duration-500 ease-out group-hover:w-full"></span>
               <span className="relative z-10">Get Started</span>
             </Link>
             <Link
-              to="/auth?mode=login"
+              to="/login"
               className="px-8 py-3 bg-white text-indigo-700 font-medium rounded-lg shadow-lg border border-indigo-200 relative overflow-hidden group"
             >
               <span className="absolute inset-0 w-0 bg-gradient-to-r from-indigo-50 to-purple-100 transition-all duration-500 ease-out group-hover:w-full"></span>

@@ -6,16 +6,17 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
+
+
 const App = () => {
   return (
     <>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/upload" element={<Upload />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/" element={<><Navbar /><Home /></>} />
+        <Route path="/upload" element={<><Navbar /><Upload /></>} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
   );
